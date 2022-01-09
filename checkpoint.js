@@ -131,17 +131,12 @@ function sumarElTipo(arreglo) {
   // sumarElTipo(['auto', 'moto', 'auto']); debe retornar {auto: 2, moto: 1}
   // Tip: podes usar el ciclo for o el metodo de Array 'reduce'
   // Tu código aca:
-  arreglo_ordenado=arreglo.sort()
-     for (i=0;i<arreglo_ordenado.length;i++) {
-   
-      if (arreglo_ordenado[i]=arreglo_ordenado[i++]) {
-        contador+=1
-      console.log(arreglo[i] +':'+ contador)
-    } else {
-      contador=1
-      console.log(arreglo[i++] +':'+ contador)
-    }
-  }
+  const cantidadTipos = arreglo.reduce((contadorTipo, tipo) => {
+    contadorTipo[tipo] = (contadorTipo[tipo] || 0 ) +1;i
+    return contadorTipo;
+  }, {})
+
+    return cantidadTipos
     
     }
 
@@ -166,7 +161,7 @@ function crearClaseEmprendedor() {
         // no debe retornar nada.
 
         // Tu código aca:
-          var pet = {mascota}
+          var pet = 'pet'
           this.mascotas.push(pet)
 
       }
@@ -204,9 +199,9 @@ function crearClaseEmprendedor() {
           // Tu código aca:
           for (i=0;i<this.libros.length;i++)
           {
-            return (libros[i].nombre)
+            return (this.libros[i].nombre)
           }
-          return this.libros
+          //return this.libros
 
       }
 
