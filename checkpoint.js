@@ -202,10 +202,10 @@ function crearClaseEmprendedor() {
           // emprendedor.getBooks() debería devolver ['El señor de las moscas', 'Fundacion']
           //libros: [{nombre: 'El señor de las moscas',autor: 'William Golding'}, {nombre: 'Fundacion', autor: 'Isaac Asimov'}]
           // Tu código aca:
-          /*for (i=0;i<this.libros.length;i++)
+          for (i=0;i<this.libros.length;i++)
           {
-            return (this.libros[i].nombre)
-          }*/
+            return (libros[i].nombre)
+          }
           return this.libros
 
       }
@@ -217,8 +217,8 @@ function crearClaseEmprendedor() {
           // emprendedor.getFullName() deberia devolver 'Elon Musk'
 
           // Tu código aca:
-          console.log(this.nombre +' '+ this.apellido)
-          return (nombre + ' ' + apellido)
+          console.log(this.nombre + ' ' + this.apellido)
+          return (this.nombre + ' ' + this.apellido)
 
       }
   }
