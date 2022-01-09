@@ -84,17 +84,16 @@ function actividadesEnComun(persona1, persona2) {
   // Tip: podes usar ciclos for anidados.
   // Tu código aca:
 
-  var persona1 = ['leer', 'comer', 'pasear', 'dormir', 'jugar']
-  var persona2 = ['comer', 'dormir', 'futbol']
+ var coincidencias=[];
+persona1.forEach(comparar);
 
-    for (i=0;i<persona1.length;i++) {
-      for (j=0;j<i;j++) {
-        if (persona1[i] == persona2[j]) {
-          console.log(persona1[i])
-          return (persona1[i])
-        }
-      } 
-    }
+function comparar(item) {
+  if(persona2.includes(item) && (coincidencias.includes(item) === false)){
+  coincidencias.push(item);
+  };
+}
+return coincidencias;
+console.log(coincidencias);
 
 }
 
