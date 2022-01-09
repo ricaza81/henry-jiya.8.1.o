@@ -166,8 +166,8 @@ function crearClaseEmprendedor() {
         // no debe retornar nada.
 
         // Tu código aca:
-          var mascota = this.mascotas
-          this.mascotas.push(mascota)
+          var pet = {mascota}
+          this.mascotas.push(pet)
 
       }
 
@@ -189,7 +189,8 @@ function crearClaseEmprendedor() {
           // El método 'addBook' recibe un string 'book' y un string 'autor' y debe agregar un objeto:
           // { nombre: book, autor: autor} al arreglo de libros del emprendedor.
           // No debe retornar nada.
-
+          var objeto = [{nombre:book,
+                        autor:autor}]
           // Tu código aca:
 
       }
@@ -199,8 +200,13 @@ function crearClaseEmprendedor() {
           // Ej:
           // Suponiendo que el emprendedor tiene estos libros: [{nombre: 'El señor de las moscas',autor: 'William Golding'}, {nombre: 'Fundacion', autor: 'Isaac Asimov'}]
           // emprendedor.getBooks() debería devolver ['El señor de las moscas', 'Fundacion']
-
+          //libros: [{nombre: 'El señor de las moscas',autor: 'William Golding'}, {nombre: 'Fundacion', autor: 'Isaac Asimov'}]
           // Tu código aca:
+          /*for (i=0;i<this.libros.length;i++)
+          {
+            return (this.libros[i].nombre)
+          }*/
+          return this.libros
 
       }
 
@@ -211,6 +217,8 @@ function crearClaseEmprendedor() {
           // emprendedor.getFullName() deberia devolver 'Elon Musk'
 
           // Tu código aca:
+          console.log(this.nombre +' '+ this.apellido)
+          return (nombre + ' ' + apellido)
 
       }
   }
