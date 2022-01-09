@@ -65,12 +65,23 @@ function estaOffline(usuarios, nombre) {
 
   // Tu código aca:
 
-  for (i=0 ; i<usuarios.length; i++) {
-    if (usuarios[i].online = true) {
-      return true }
-    if (usuarios[i].online = false) {
+  /*for (i=0 ; i<usuarios.length; i++) {
+    if (usuarios[i].nombre = nombre) {
+      return usuarios[i].online }
+    /*if (usuarios[i].nombre != nombre) {
       return false }
-  }
+  }*/
+
+    let online = null;
+
+            usuarios.forEach(function (o) {
+                if (o.nombre == nombre) {
+                    online = !o.online; //Regresas lo contrario a online
+                    return false;
+                }
+            });
+
+            return online;
 
   
 }
