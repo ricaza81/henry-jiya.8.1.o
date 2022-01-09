@@ -1,0 +1,27 @@
+<script>
+
+actividadesEnComun();
+
+function actividadesEnComun(persona1, persona2) {
+  // La funcion llamada 'actividadesEnComun' recibe como argumento dos arrays de actividades (strings) llamados 'persona1' y 'persona2'
+  // y debe devolver un array de strings con las actividades en comun ( aquellas que se repiten ) entre cada array.
+  // ej: persona1 = ['leer', 'comer', 'pasear', 'dormir', 'jugar']
+  //     persona2 = ['comer', 'dormir', 'futbol']
+  // actividadesEnComun(persona1, persona2) => ['comer', 'dormir']
+  // Tip: podes usar ciclos for anidados.
+  // Tu código aca:
+
+  var persona1 = ['leer', 'comer', 'pasear', 'dormir', 'jugar']
+  var persona2 = ['comer', 'dormir', 'futbol']
+
+    for (i=0;i<persona1.length;i++) {
+      for (j=0;j<i;j++) {
+        if (persona1[i] == persona2[j]) {
+          console.log(persona1[i])
+          return (persona1[i])
+        }
+      } 
+    }
+
+}
+</script>

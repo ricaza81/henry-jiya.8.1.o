@@ -1,0 +1,29 @@
+<script>
+var array=[1, 5, 2, 9, 6, 4];
+var suma = 0;
+
+sumaTodosImpares();
+
+function sumaTodosImpares(array) {
+  // La funcion llamada 'sumaTodosImpares' recibe como argumento un array de enteros.
+  // y debe devolver la suma total entre todos los numeros impares.
+  // ej:
+  // sumaTodosImpares([1, 5, 2, 9, 6, 4]) devuelve 1 + 5 + 9 = 15
+
+  // Tu código aca:
+  //
+  //var array = [1, 10, 3, 9, 6]
+  //var array = [5, 8, 11, 4]
+  var array= [];
+  var suma = 0;
+  for(i=0;i<array.length;i++) {
+    if (array[i]%2 != 0) {
+    suma += array[i];
+      }      
+    }
+  console.log(suma);
+  return suma;
+
+  
+}
+</script>
