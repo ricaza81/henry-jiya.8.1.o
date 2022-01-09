@@ -1,0 +1,37 @@
+<script>
+
+sumarElTipo();
+
+function sumarElTipo(arreglo) {
+  // La funcion llamada 'sumarElTipo' recibe un array de strings como argumento
+  // que contiene tipos de vehiculos y debe devolver un objeto con la cantidad
+  // de veces que se repita cada tipo.
+  // El objeto que devuelve tiene como propiedades el nombre de cada vehiculo y su valor es la cantidad de veces que se repite.
+  // Ej:
+  // sumarElTipo(['auto', 'moto', 'auto']); debe retornar {auto: 2, moto: 1}
+  // Tip: podes usar el ciclo for o el metodo de Array 'reduce'
+  // Tu código aca:
+
+  arreglo=['auto', 'moto', 'auto']
+  contador = 0
+  arreglo_ordenado=arreglo.sort()
+  console.log(arreglo_ordenado)
+   
+   for (i=0;i<arreglo_ordenado.length;i++) {
+   
+      if (arreglo_ordenado[i]=arreglo_ordenado[i++]) {
+        contador+=1
+      console.log(arreglo[i] +':'+ contador)
+    } else {
+      contador=1
+      console.log(arreglo[i++] +':'+ contador)
+    }
+  }
+    
+    }
+
+
+
+
+
+</script>

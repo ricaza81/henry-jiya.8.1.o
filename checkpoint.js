@@ -130,10 +130,20 @@ function sumarElTipo(arreglo) {
   // Ej:
   // sumarElTipo(['auto', 'moto', 'auto']); debe retornar {auto: 2, moto: 1}
   // Tip: podes usar el ciclo for o el metodo de Array 'reduce'
-
   // Tu código aca:
-
-}
+  arreglo_ordenado=arreglo.sort()
+     for (i=0;i<arreglo_ordenado.length;i++) {
+   
+      if (arreglo_ordenado[i]=arreglo_ordenado[i++]) {
+        contador+=1
+      console.log(arreglo[i] +':'+ contador)
+    } else {
+      contador=1
+      console.log(arreglo[i++] +':'+ contador)
+    }
+  }
+    
+    }
 
 // =======================================================================
 
@@ -144,6 +154,10 @@ function crearClaseEmprendedor() {
           // Inicializar las propiedades del emprendedor con los valores recibidos como argumento
 
           // Tu código aca:
+          this.nombre=nombre;
+          this.apellido=apellido;
+          this.libros=libros;
+          this.mascotas=mascotas;
 
       }
 
@@ -152,6 +166,8 @@ function crearClaseEmprendedor() {
         // no debe retornar nada.
 
         // Tu código aca:
+          var mascota = this.mascotas
+          this.mascotas.push(mascota)
 
       }
 
@@ -162,6 +178,10 @@ function crearClaseEmprendedor() {
           // emprendedor.getMascotas() debería devolver 2
 
           // Tu código aca:
+
+          for (i=0;i<this.mascotas.length;i++) {
+            return (this.mascotas.length)
+          }
 
       }
 
